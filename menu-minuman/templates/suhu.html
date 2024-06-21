@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Suhu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-display-topmiddle w3-padding-large w3-xlarge centered-logo">
+            Drink Checker
+        </div>
+        <div class="sec-center">
+            <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+            <label class="for-dropdown" for="dropdown">Choose Suhu <i class="fas fa-arrow-down"></i></label>
+            <div class="section-dropdown">
+                <form action="/select_suhu" method="post">
+                    <a href="#"><input type="radio" name="suhu" value="ice"> Ice</a>
+                    <a href="#"><input type="radio" name="suhu" value="hot"> Hot</a>
+                    <button class="for-dropdown" type="submit">Next</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Pilih Based</title>
+</head>
+<body>
+    <div class="sec-center">
+        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+        <label class="for-dropdown" for="dropdown">Choose Based <i class="fas fa-arrow-down"></i></label>
+        <div class="section-dropdown">
+            <form action="/select_based" method="post">
+                <a href="#"><input type="radio" name="based" value="coffee"> Coffee</a>
+                <a href="#"><input type="radio" name="based" value="mojito"> Mojito</a>
+                <a href="#"><input type="radio" name="based" value="tea"> Tea</a>
+                <a href="#"><input type="radio" name="based" value="milk"> Milk</a>
+                <button class="for-dropdown" type="submit">Next</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

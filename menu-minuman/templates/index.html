@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Minuman Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="w3-container w3-center w3-padding-64">
+        <h1 class="w3-xxlarge">Minuman Recommendation</h1>
+        <form action="/result" method="post">
+            <label for="suhu">Pilih Suhu:</label>
+            <select id="suhu" name="suhu" class="w3-select">
+                <option value="ice">Ice</option>
+                <option value="hot">Hot</option>
+            </select>
+            <br><br>
+            <label for="based">Pilih Bahan Dasar:</label>
+            <select id="based" name="based" class="w3-select">
+                <option value="coffee">Coffee</option>
+                <option value="milk">Milk</option>
+                <option value="tea">Tea</option>
+                <option value="mojito">Mojito</option>
+            </select>
+            <br><br>
+            <label for="rasa">Pilih Rasa:</label>
+            <select id="rasa" name="rasa" class="w3-select">
+                <option value="manis">Manis</option>
+                <option value="pahit">Pahit</option>
+                <option value="kecut">Kecut</option>
+            </select>
+            <br><br>
+            <button type="submit" class="w3-button w3-teal">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

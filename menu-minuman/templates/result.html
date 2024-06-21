@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Rekomendasi Minuman</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="w3-container w3-center w3-padding-64">
+        <h1 class="w3-xxlarge">Rekomendasi Minuman untuk Anda</h1>
+        <ul class="w3-ul w3-card-4">
+            {% for drink in recommendations %}
+                <li class="w3-padding-16">{{ drink }}</li>
+            {% endfor %}
+        </ul>
+        <br>
+        <a href="/" class="w3-button w3-teal">Back</a>
+    </div>
+</body>
+</html>
